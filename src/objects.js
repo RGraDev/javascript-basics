@@ -28,7 +28,7 @@ const createTalkingPerson = (name, age) => {
     name,
     age,
     introduce(friend) {
-      return `Hi ${friend}, my name is ${this.name} and I am ${this.age}!`
+      return `Hi ${friend}, my name is ${this.name} and I am ${this.age}!`;
     }
   };
 };
