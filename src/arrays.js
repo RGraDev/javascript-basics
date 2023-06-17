@@ -1,4 +1,5 @@
-const getNthElement = (index, array) => {};
+const getNthElement = (index, array) => array[index % array.length];
+
 const arrayToCSVString = array => array.toString();
 
 const csvStringToArray = string => string.split(',');
