@@ -1,9 +1,8 @@
 const createPerson = (name, age) => {
-  const person = {};
-  person.name = name;
-  person.age = age;
-
-  return person;
+  return {
+    name,
+    age
+  };
 };
 
 const getName = object => object.name;
@@ -25,7 +24,13 @@ const averageAge = people =>
   people.reduce((a, b) => a + b.age, 0) / people.length;
 
 const createTalkingPerson = (name, age) => {
-
+  return {
+    name,
+    age,
+    introduce(friend) {
+      return `Hi ${friend}, my name is ${this.name} and I am ${this.age}!`
+    }
+  };
 };
 
 module.exports = {
