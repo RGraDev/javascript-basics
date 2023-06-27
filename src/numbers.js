@@ -35,8 +35,7 @@ function absolute(a) {
 }
 
 function quotient(a, b) {
-  // eslint-disable-next-line radix
-  return parseInt(a / b);
+  return Math.trunc(a / b);
 }
 
 function remainder(a, b) {

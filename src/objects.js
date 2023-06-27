@@ -9,7 +9,7 @@ const getName = object => object.name;
 
 const getProperty = (property, object) => object[property];
 
-const hasProperty = (property, object) => object.hasOwnProperty(property);
+const hasProperty = (property, object) => Object.hasOwn(object, property);
 
 const isOver65 = person => person.age > 65;
 
@@ -28,7 +28,7 @@ const createTalkingPerson = (name, age) => {
     name,
     age,
     introduce(friend) {
-      return `Hi ${friend}, my name is ${this.name} and I am ${this.age}!`;
+      return `Hi ${friend}, my name is ${name} and I am ${age}!`;
     }
   };
 };

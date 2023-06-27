@@ -1,5 +1,3 @@
-const { startsWith } = require('./booleans');
-
 function sayHello(string) {
   return `Hello, ${string}!`;
 }
@@ -17,7 +15,7 @@ function countCharacters(string) {
 }
 
 function firstCharacter(string) {
-  return string[0];
+  return string.charAt(0);
 }
 
 function firstCharacters(string, n) {
